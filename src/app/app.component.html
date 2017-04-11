@@ -1,4 +1,77 @@
-<h1>
-  {{title}}
-</h1>
+<!-- Fixed menu -->
+<div smDeviceVisibility="tablet computer">
+  <sm-menu id='fixed-menu' class='large hidden fixed'>
+    <div class='ui container'>
+      <a sm-item href="/" class='active'>Home</a>
+      <a sm-item href="/other">Other</a>
+      <div class='item right'>
+        <a class='ui button' href='/quote'>Get Quote</a>
+      </div>
+    </div>
+  </sm-menu>
+</div>
+
+<sm-segment class="inverted vertical masthead center aligned">
+  <div class='ui container'>
+    <!-- Desktop Header -->
+    <div smDeviceVisibility="tablet computer">
+      <sm-menu class='inverted large pointing secondary'>
+        <a sm-item href="/" class='active'>Home</a>
+        <a sm-item href="/other">Other</a>
+        <div class='item right'>
+          <a class='ui inverted button' href='/quote'>Get Quote</a>
+        </div>
+      </sm-menu>
+    </div>
+
+    <!-- Mobile Header -->
+    <sm-menu class="inverted secondary" smDeviceVisibility="mobile only">
+        <a sm-item icon='sidebar big' (click)="mobileSidebar.show({transition: 'overlay'})"></a>
+        <sm-sidebar class="left vertical inverted sidebar labeled menu icon" #mobileSidebar>
+            <a class="item">
+                <i class="home icon"></i> Home
+            </a>
+            <a class="item">
+                <i class="block layout icon"></i> Other
+            </a>
+        </sm-sidebar>
+    </sm-menu>
+  </div>
+    <div class="ui text container">
+      <h1 class="ui inverted header">
+        Felker's
+      </h1>
+      <h2>Tents, Tables, and Chairs</h2>
+      <!--<div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>-->
+    </div>
+</sm-segment>
+
 <router-outlet></router-outlet>
+<div class="ui inverted vertical footer segment">
+  <div class="ui container">
+    <div class="ui stackable inverted divided equal height stackable grid">
+      <div class="three wide column">
+        <h4 class="ui inverted header">About</h4>
+        <div class="ui inverted link list">
+          <a href="#" class="item">Sitemap</a>
+          <a href="#" class="item">Contact Us</a>
+          <a href="#" class="item">Religious Ceremonies</a>
+          <a href="#" class="item">Gazebo Plans</a>
+        </div>
+      </div>
+      <div class="three wide column">
+        <h4 class="ui inverted header">Services</h4>
+        <div class="ui inverted link list">
+          <a href="#" class="item">Banana Pre-Order</a>
+          <a href="#" class="item">DNA FAQ</a>
+          <a href="#" class="item">How To Access</a>
+          <a href="#" class="item">Favorite X-Men</a>
+        </div>
+      </div>
+      <div class="seven wide column">
+        <h4 class="ui inverted header">Footer Header</h4>
+        <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+      </div>
+    </div>
+  </div>
+</div>
