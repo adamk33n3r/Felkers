@@ -247,7 +247,7 @@ module.exports = "<sm-segment class=\"vertical stripe\">\n  <div class=\"ui stac
 
 /***/ }),
 
-/***/ 240:
+/***/ 241:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(118);
@@ -297,5 +297,5 @@ HomeComponent = __decorate([
 
 /***/ })
 
-},[240]);
+},[241]);
 //# sourceMappingURL=main.bundle.js.map
