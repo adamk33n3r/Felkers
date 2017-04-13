@@ -30,8 +30,9 @@
       "prefix": "felk",
       "serviceWorker": true,
       "styles": [
-        "styles.sass",
-        "../node_modules/lightbox2/dist/css/lightbox.min.css"
+        "../node_modules/lightbox2/dist/css/lightbox.min.css",
+        "./assets/semantic/semantic.min.css",
+        "styles.sass"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",
