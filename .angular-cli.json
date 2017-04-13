@@ -9,8 +9,17 @@
       "outDir": "dist",
       "assets": [
         "assets",
+
+        "android-chrome-192x192.png",
+        "android-chrome-256x256.png",
+        "apple-touch-icon.png",
+        "browserconfig.xml",
+        "favicon-16x16.png",
+        "favicon-32x32.png",
         "favicon.ico",
-        "manifest.json"
+        "manifest.json",
+        "mstile-150x150.png",
+        "safari-pinned-tab.svg"
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -21,10 +30,12 @@
       "prefix": "felk",
       "serviceWorker": true,
       "styles": [
-        "styles.sass"
+        "styles.sass",
+        "../node_modules/lightbox2/dist/css/lightbox.min.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/lightbox2/dist/js/lightbox.min.js",
         "./assets/semantic/semantic.min.js"
       ],
       "environmentSource": "environments/environment.ts",

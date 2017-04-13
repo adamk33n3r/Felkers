@@ -1,32 +1,34 @@
 <!-- Fixed menu -->
 <div smDeviceVisibility="tablet computer">
-  <sm-menu id='fixed-menu' class='large hidden fixed'>
+  <sm-menu id='fixed-menu' class='top large hidden fixed'>
     <div class='ui container'>
-      <a sm-item href="/" class='active'>Home</a>
-      <a sm-item href="/other">Other</a>
-      <div class='item right'>
-        <a class='ui button' href='/quote'>Get Quote</a>
-      </div>
+      <!--<a sm-item href="/" class='active'>Home</a>
+      <a sm-item href="/other">Other</a>-->
+      <div class='item'>Felker's Tents, Tables & Chairs</div>
+      <!--<div class='item right'>
+        <a class='ui button' href='tel:555-555-5555'>Call (555) 555-5555 for a quote!</a>
+      </div>-->
     </div>
   </sm-menu>
 </div>
 
 <sm-segment class="inverted vertical masthead center aligned">
+  <div class='color-overlay'></div>
   <div class='ui container'>
     <!-- Desktop Header -->
     <div smDeviceVisibility="tablet computer">
       <sm-menu class='inverted large pointing secondary'>
-        <a sm-item href="/" class='active'>Home</a>
-        <a sm-item href="/other">Other</a>
-        <div class='item right'>
-          <a class='ui inverted button' href='/quote'>Get Quote</a>
-        </div>
+        <!--<a sm-item href="/" class='active'>Home</a>
+        <a sm-item href="/other">Other</a>-->
+        <!--<div class='item right'>
+          <a class='ui inverted button' href='tel:555-555-5555'>Call (555) 555-5555 for a quote!</a>
+        </div>-->
       </sm-menu>
     </div>
 
     <!-- Mobile Header -->
     <sm-menu class="inverted secondary" smDeviceVisibility="mobile only">
-        <a sm-item icon='sidebar big' (click)="mobileSidebar.show({transition: 'overlay'})"></a>
+        <!--<a sm-item icon='sidebar big' (click)="mobileSidebar.show({transition: 'overlay'})"></a>
         <sm-sidebar class="left vertical inverted sidebar labeled menu icon" #mobileSidebar>
             <a class="item">
                 <i class="home icon"></i> Home
@@ -34,19 +36,22 @@
             <a class="item">
                 <i class="block layout icon"></i> Other
             </a>
-        </sm-sidebar>
+        </sm-sidebar>-->
     </sm-menu>
   </div>
-    <div class="ui text container">
-      <h1 class="ui inverted header">
-        Felker's
-      </h1>
-      <h2>Tents, Tables, and Chairs</h2>
-      <!--<div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>-->
-    </div>
+  <div class="ui text container">
+    <h2>
+      Felker's
+      Tents, Tables & Chairs
+    </h2>
+    <h1 class='ui inverted header'>The Tops in Tents</h1>
+    <a class='ui large inverted button' href='tel:555-555-5555'>Call (555) 555-5555 for a quote!</a>
+    <!--<div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>-->
+  </div>
 </sm-segment>
 
 <router-outlet></router-outlet>
+<!-- Footer -->
 <div class="ui inverted vertical footer segment">
   <div class="ui container">
     <div class="ui stackable inverted divided equal height stackable grid">

@@ -1,34 +1,39 @@
-<h1 class='ui header'>
-  {{ title }}
-</h1>
 <sm-segment class="vertical stripe">
-  <div class="ui middle aligned stackable grid container">
+  <div class="ui stackable grid container">
     <div class="row">
       <div class="eight wide column">
         <h3 class="ui header">We Help Companies and Companions</h3>
-        <p>We can give your company superpowers to do things that they never thought possible. Let us delight your customers and empower your needs...through pure data analytics.</p>
+        <p>
+          In entirely be to at settling felicity. Fruit two match men you seven share. Needed as or is enough points. Miles at smart ﻿no marry whole linen mr. Income joy nor can wisdom summer. Extremely depending he gentleman improving intention rapturous as.
+        </p>
+      </div>
+      <div class="eight wide column">
         <h3 class="ui header">We Make Bananas That Can Dance</h3>
         <p>Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.</p>
       </div>
-      <div class="six wide right floated column">
-        <img src="assets/images/yellow_20x20.png" class="ui large bordered rounded image">
-        <!--<img src="http://placekitten.com/400/400" class="ui large bordered rounded image">-->
+    </div>
+    <div class='row'>
+      <div class='ui grid container'>
+        <div class='eight wide column' *ngFor='let image of images'>
+          <a [href]='"assets/images/" + image' data-lightbox='slideshow'>
+            <img [src]='"assets/images/" + image' class="ui bordered rounded image">
+          </a>
+        </div>
       </div>
     </div>
     <div class="row">
       <div class="center aligned column">
-        <a class="ui huge button">Get a Quote</a>
+        <a class='ui huge button' href='tel:555-555-5555'>Call (555) 555-5555 for a quote!</a>
       </div>
     </div>
   </div>
 </sm-segment>
-<!--<sm-input icon="dollar" [control]="user" class="left" placeholder="Enter sum..."></sm-input>-->
 
-<!--{{user.value}}-->
-<sm-segment class='container vertical stripe'>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquam tristique tellus, ultrices tempus ipsum dictum ac. Phasellus vel lacus et tortor pharetra consequat ut eget libero. Suspendisse pulvinar id dui non commodo. In tincidunt consectetur eros in semper. Integer sed lectus erat. In ultricies leo at congue lacinia. Curabitur aliquet semper purus, eu sodales erat auctor vel.
-  Curabitur venenatis, lorem et pellentesque sollicitudin, libero risus malesuada metus, eu bibendum orci odio ut arcu. Mauris ut enim augue. Nulla leo sapien, luctus eleifend ullamcorper sit amet, aliquet ac odio. Quisque non eros fermentum, iaculis massa nec, pretium ante. In nulla tortor, maximus vel mauris quis, pellentesque tempus lacus. Phasellus faucibus justo sit amet nulla rutrum, a consectetur nisi lobortis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut facilisis, urna vitae feugiat suscipit, tellus purus consectetur eros, eget pretium lacus tellus ac ex. Duis eu nibh libero. Ut tincidunt, massa at ornare luctus, est tellus venenatis libero, ac efficitur arcu velit a eros. Donec consequat luctus congue. Praesent a tellus sed ipsum auctor vehicula volutpat vitae libero. Fusce sollicitudin erat justo, sit amet varius justo convallis non. Sed imperdiet nunc non tempus venenatis. Aliquam aliquet rutrum purus, vulputate lobortis lectus laoreet id.
-  Etiam ac ipsum sit amet neque iaculis ultricies a at nunc. Fusce sit amet tincidunt nunc. Phasellus et aliquet diam. Cras id purus vitae est luctus feugiat. Sed nec pretium ligula, quis mattis augue. Donec fringilla vehicula blandit. Nunc eleifend rutrum mattis. Praesent eros massa, tincidunt id tempor a, varius sed nunc. Integer eget turpis facilisis, suscipit erat blandit, ullamcorper lectus. Mauris eget leo vitae massa lobortis convallis. Donec tempor turpis a turpis volutpat, id vulputate velit maximus.
-  Curabitur ultricies felis quis sagittis ultricies. Maecenas placerat nisi nunc, eu blandit lorem egestas quis. Nullam in dignissim tortor. Cras cursus dapibus nisi ut facilisis. Cras non pulvinar nunc. Vivamus libero ante, malesuada eu est sed, porta gravida lacus. Cras fermentum blandit tellus. Fusce a lorem in risus faucibus malesuada. Morbi at purus odio. Cras eget congue magna, eget pellentesque lacus. Praesent quam ex, pulvinar non feugiat auctor, fringilla a elit. Sed eu mauris vitae dui mollis dictum sollicitudin eget nisl. Nunc suscipit auctor urna at interdum. Ut in ipsum nec quam auctor efficitur. Duis dignissim ut nisl sed dictum.
-  Vestibulum tellus sem, vestibulum nec lectus eu, ornare blandit justo. Nulla imperdiet quis quam vel placerat. Cras rhoncus, eros sodales pretium eleifend, urna neque mollis lacus, at congue odio erat at dolor. Fusce vestibulum nisl in pulvinar condimentum. Fusce diam massa, ultrices sit amet lacinia a, sagittis et ligula. Nullam accumsan ipsum sit amet orci elementum, placerat iaculis dui volutpat. Donec porttitor porta neque luctus placerat. Quisque lectus risus, sagittis a quam in, lobortis placerat sem. Phasellus vel massa sit amet erat luctus blandit. Nulla commodo odio quam, sed elementum metus finibus eu. Ut porttitor, dolor sit amet fermentum scelerisque, odio lorem venenatis justo, non ornare turpis metus a eros. Quisque quis dui id odio tempus ultrices. In at est risus. Nulla bibendum metus eu dapibus tincidunt.
-</sm-segment>
+<!--<sm-segment class='container vertical stripe'>
+<p>
+  Allow miles wound place the leave had. To sitting subject no improve studied limited. Ye indulgence unreserved connection alteration appearance my an astonished. Up as seen sent make he they of. Her raising and himself pasture believe females. Fancy she stuff after aware merit small his. Charmed esteems luckily age out.
+</p>
+<p>
+  As absolute is by amounted repeated entirely ye returned. These ready timed enjoy might sir yet one since. Years drift never if could forty being no. On estimable dependent as suffering on my. Rank it long have sure in room what as he. Possession travelling sufficient yet our. Talked vanity looked in to. Gay perceive led believed endeavor. Rapturous no of estimable oh therefore direction up. Sons the ever not fine like eyes all sure.
+</p>
+</sm-segment>-->
