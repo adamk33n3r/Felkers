@@ -13,7 +13,6 @@
 </div>
 
 <sm-segment class="inverted vertical masthead center aligned">
-  <div class='color-overlay'></div>
   <div class='ui container'>
     <!-- Desktop Header -->
     <div smDeviceVisibility="tablet computer">
@@ -45,38 +44,12 @@
       Tents, Tables & Chairs
     </h2>
     <h1 class='ui inverted header'>The Tops in Tents</h1>
-    <a class='ui large inverted button' href='tel:555-555-5555'>Call (555) 555-5555 for a quote!</a>
+    <a class='ui large inverted button' href='tel:{{ phone }}'>Call {{ phone }} for a quote!</a>
     <!--<div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>-->
   </div>
 </sm-segment>
 
 <router-outlet></router-outlet>
+
 <!-- Footer -->
-<div class="ui inverted vertical footer segment">
-  <div class="ui container">
-    <div class="ui stackable inverted divided equal height stackable grid">
-      <div class="three wide column">
-        <h4 class="ui inverted header">About</h4>
-        <div class="ui inverted link list">
-          <a href="#" class="item">Sitemap</a>
-          <a href="#" class="item">Contact Us</a>
-          <a href="#" class="item">Religious Ceremonies</a>
-          <a href="#" class="item">Gazebo Plans</a>
-        </div>
-      </div>
-      <div class="three wide column">
-        <h4 class="ui inverted header">Services</h4>
-        <div class="ui inverted link list">
-          <a href="#" class="item">Banana Pre-Order</a>
-          <a href="#" class="item">DNA FAQ</a>
-          <a href="#" class="item">How To Access</a>
-          <a href="#" class="item">Favorite X-Men</a>
-        </div>
-      </div>
-      <div class="seven wide column">
-        <h4 class="ui inverted header">Footer Header</h4>
-        <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
-      </div>
-    </div>
-  </div>
-</div>
+<felk-footer></felk-footer>

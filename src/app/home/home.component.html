@@ -1,39 +1,118 @@
-<sm-segment class="vertical stripe">
-  <div class="ui stackable grid container">
-    <div class="row">
-      <div class="eight wide column">
-        <h3 class="ui header">Servicing the Owosso Area and Beyond</h3>
-        <p>
-          In entirely be to at settling felicity. Fruit two match men you seven share. Needed as or is enough points. Miles at smart ﻿no marry whole linen mr. Income joy nor can wisdom summer. Extremely depending he gentleman improving intention rapturous as.
-        </p>
-      </div>
-      <div class="eight wide column">
-        <h3 class="ui header">We Make Bananas That Can Dance</h3>
-        <p>Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.</p>
-      </div>
-    </div>
+<!-- Servicing Owosso -->
+<sm-segment class='vertical stripe'>
+  <div class='ui stackable grid container'>
     <div class='row'>
-      <div class='ui grid container'>
-        <div class='eight wide column' *ngFor='let image of images'>
-          <a [href]='"assets/images/" + image' data-lightbox='slideshow'>
-            <img [src]='"assets/images/" + image' class="ui bordered rounded image">
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="center aligned column">
-        <a class='ui huge button' href='tel:555-555-5555'>Call (555) 555-5555 for a quote!</a>
+      <div class='center aligned column'>
+        <h3 class='ui header'>Servicing the Owosso Area and Beyond</h3>
+        <p>
+        </p>
       </div>
     </div>
   </div>
 </sm-segment>
 
-<!--<sm-segment class='container vertical stripe'>
-<p>
-  Allow miles wound place the leave had. To sitting subject no improve studied limited. Ye indulgence unreserved connection alteration appearance my an astonished. Up as seen sent make he they of. Her raising and himself pasture believe females. Fancy she stuff after aware merit small his. Charmed esteems luckily age out.
-</p>
-<p>
-  As absolute is by amounted repeated entirely ye returned. These ready timed enjoy might sir yet one since. Years drift never if could forty being no. On estimable dependent as suffering on my. Rank it long have sure in room what as he. Possession travelling sufficient yet our. Talked vanity looked in to. Gay perceive led believed endeavor. Rapturous no of estimable oh therefore direction up. Sons the ever not fine like eyes all sure.
-</p>
-</sm-segment>-->
+<!-- Photo Grid -->
+<sm-segment class='vertical stripe no-top'>
+  <div class='ui stackable grid container'>
+    <div class='row'>
+      <div class='ui grid container'>
+        <div class='eight wide column' *ngFor='let image of images'>
+          <a [href]='"assets/images/" + image' data-lightbox='slideshow'>
+            <img [src]='"assets/images/" + image' class='ui bordered rounded image'>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</sm-segment>
+
+<!-- Create picturesque environments -->
+<div id='info' class='ui middle aligned center aligned grid'>
+  <div class='row'>
+    <div class='column'>
+      <sm-segment class='vertical stripe inverted transparent-bg'>
+        <div class='ui container'>
+          <i class='camera retro icon'></i> Create picturesque environments.
+        </div>
+      </sm-segment>
+    </div>
+  </div>
+</div>
+
+<!-- Photo Grid -->
+<sm-segment class='vertical stripe'>
+  <div class='ui stackable grid container'>
+    <div class='row'>
+      <div class='ui grid container'>
+        <div class='eight wide column' *ngFor='let image of images2'>
+          <a [href]='"assets/images/" + image' data-lightbox='slideshow'>
+            <img [src]='"assets/images/" + image' class='ui bordered rounded image'>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</sm-segment>
+
+<!-- We come to you -->
+<div id='info2' class='ui middle aligned center aligned grid'>
+  <div class='row'>
+    <div class='column'>
+      <sm-segment class='vertical stripe inverted transparent-bg'>
+        <div class='ui container'>
+          <i class='shipping icon'></i> We come to you.
+        </div>
+      </sm-segment>
+    </div>
+  </div>
+</div>
+
+<!-- Stock -->
+<sm-segment class='vertical stripe'>
+  <div class='ui stackable grid container'>
+    <div class='row'>
+      <div class='eight wide column'>
+        <h3 class='ui header'>Canopy Tents</h3>
+        <sm-list class='big relaxed animated celled'>
+          <sm-item>20x20 Yellow, Red, or Green Striped with White</sm-item>
+          <sm-item>20x30 Yellow Striped with White</sm-item>
+          <sm-item>20x40 White</sm-item>
+          <sm-item>40x40 White</sm-item>
+          <sm-item>40x60 White</sm-item>
+        </sm-list>
+      </div>
+      <div class='eight wide column'>
+        <h3 class='ui header'>Frame Tents</h3>
+        <sm-list class='big relaxed animated celled'>
+          <sm-item>20x20 White</sm-item>
+          <sm-item>20x30 White</sm-item>
+        </sm-list>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='eight wide column'>
+        <h3 class='ui header'>Tables</h3>
+        <sm-list class='big relaxed animated celled'>
+          <sm-item>6ft - Beige</sm-item>
+          <sm-item>8ft - White</sm-item>
+          <sm-item>8ft - Brown</sm-item>
+          <sm-item>6ft - White Ice</sm-item>
+          <sm-item>5ft - White Round</sm-item>
+          <sm-item>(SIZE NEEDED) - Hightop/Cocktail</sm-item>
+        </sm-list>
+      </div>
+      <div class='eight wide column'>
+        <h3 class='ui header'>Chairs</h3>
+        <sm-list class='big relaxed animated celled'>
+          <sm-item>White Back and Seat/White Frame</sm-item>
+          <sm-item>Off-White Back and Seat/Brown Frame</sm-item>
+        </sm-list>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='center aligned column'>
+        <a class='ui huge button' href='tel:{{ phone }}'>Call {{ phone }} for a quote!</a>
+      </div>
+    </div>
+  </div>
+</sm-segment>

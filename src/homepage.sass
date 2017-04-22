@@ -23,6 +23,8 @@
 
 .ui.vertical.stripe
   padding: 8em 0em
+  &.no-top
+    padding-top: 0
   h3
     font-size: 2em
   .button + h3, p + h3
@@ -39,9 +41,6 @@
   .grid .column
     padding-top: 5em
     padding-bottom: 5em
-
-.footer.segment
-  padding: 5em 0em
 
 .secondary.pointing.menu .toc.item
   display: none
@@ -72,8 +71,9 @@
 // Custom
 
 .masthead .ui.inverted.segment
-  background-image: url("/assets/images/cover4.png")
-  background-repeat: no-repeat
-  background-size: cover
-  background-position-y: 100%
-  background-position-x: 50%
+  background: transparent
+//   background-image: url("/assets/images/cover4.png")
+//   background-repeat: no-repeat
+//   background-size: cover
+//   background-position-y: 100%
+//   background-position-x: 50%

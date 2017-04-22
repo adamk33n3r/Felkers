@@ -2529,7 +2529,13 @@ jodid25519@^1.0.0:
   dependencies:
     jsbn "~0.1.0"
 
-jquery@^3.2.1:
+jquery-parallax.js@^1.4.3:
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/jquery-parallax.js/-/jquery-parallax.js-1.4.3.tgz#734584df82266d24472ebf227dbbc63bf5eb860c"
+  dependencies:
+    jquery ">=1.7"
+
+jquery@>=1.7, jquery@^3.2.1:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.2.1.tgz#5c4d9de652af6cd0a770154a631bba12b015c787"
 
@@ -3015,9 +3021,9 @@ negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
 
-"ng-semantic@https://github.com/vladotesanovic/ngSemantic/tarball/master":
+"ng-semantic@git+https://github.com/vladotesanovic/ngSemantic.git":
   version "1.1.13"
-  resolved "https://github.com/vladotesanovic/ngSemantic/tarball/master#8b4dab6668b99c308917df1f6a4165cdff477004"
+  resolved "git+https://github.com/vladotesanovic/ngSemantic.git#0a5da26346ff7964ec181632d0e34ee2f12385e9"
 
 no-case@^2.2.0:
   version "2.3.1"
@@ -4240,6 +4246,10 @@ silent-error@^1.0.0:
 slide@^1.1.5:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/slide/-/slide-1.1.6.tgz#56eb027d65b4d2dce6cb2e2d32c4d4afc9e1d707"
+
+smoothscroll-for-websites@^1.4.6:
+  version "1.4.6"
+  resolved "https://registry.yarnpkg.com/smoothscroll-for-websites/-/smoothscroll-for-websites-1.4.6.tgz#753fac88be6f20a1ec85902593653cbaa3059f82"
 
 sntp@1.x.x:
   version "1.0.9"

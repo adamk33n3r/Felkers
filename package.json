@@ -23,9 +23,11 @@
     "@angular/service-worker": "^1.0.0-beta.8",
     "core-js": "^2.4.1",
     "jquery": "^3.2.1",
+    "jquery-parallax.js": "^1.4.3",
     "lightbox2": "^2.9.0",
-    "ng-semantic": "https://github.com/vladotesanovic/ngSemantic/tarball/master",
+    "ng-semantic": "git+https://github.com/vladotesanovic/ngSemantic.git",
     "rxjs": "^5.1.0",
+    "smoothscroll-for-websites": "^1.4.6",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {

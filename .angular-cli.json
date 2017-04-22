@@ -19,7 +19,8 @@
         "favicon.ico",
         "manifest.json",
         "mstile-150x150.png",
-        "safari-pinned-tab.svg"
+        "safari-pinned-tab.svg",
+        "sitemap.txt"
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -37,6 +38,8 @@
       "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",
         "../node_modules/lightbox2/dist/js/lightbox.min.js",
+        "../node_modules/jquery-parallax.js/parallax.min.js",
+        "../node_modules/smoothscroll-for-websites/SmoothScroll.js",
         "./assets/semantic/semantic.min.js"
       ],
       "environmentSource": "environments/environment.ts",
