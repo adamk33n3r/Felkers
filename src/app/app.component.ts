@@ -3,6 +3,7 @@ import { PHONE } from 'app/globals';
 
 declare var $: any;
 declare var lightbox: any;
+declare var ga: any;
 
 @Component({
   selector: 'felk-root',
@@ -30,5 +31,9 @@ export class AppComponent implements OnInit, AfterViewInit {
     //     $('.fixed.menu').transition('fade out');
     //   },
     // });
+  }
+
+  public sendEvent() {
+    ga('send', 'event', 'button', 'click', 'call1');
   }
 }

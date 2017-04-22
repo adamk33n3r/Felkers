@@ -2,6 +2,7 @@ import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { PHONE } from 'app/globals';
 
 declare var $: any;
+declare var ga: any;
 
 @Component({
   selector: 'felk-home',
@@ -26,5 +27,9 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   public ngAfterViewInit() {
     $('#info, #info2').parallax({ imageSrc: '/assets/images/info.png' });
+  }
+
+  public sendEvent() {
+    ga('send', 'event', 'button', 'click', 'call2');
   }
 }
