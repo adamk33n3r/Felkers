@@ -1,6 +1,6 @@
 webpackJsonp([2,5],{
 
-/***/ 117:
+/***/ 118:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -9,20 +9,20 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 117;
+webpackEmptyContext.id = 118;
 
 
 /***/ }),
 
-/***/ 118:
+/***/ 119:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(128);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(133);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(134);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(131);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(136);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(138);
 
 
 
@@ -35,13 +35,13 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 131:
+/***/ 134:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(129);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home_component__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(132);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home_component__ = __webpack_require__(88);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppRoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -79,11 +79,12 @@ AppRoutingModule = __decorate([
 
 /***/ }),
 
-/***/ 132:
+/***/ 135:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_app_globals__ = __webpack_require__(87);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -92,8 +93,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 
+
 var AppComponent = (function () {
     function AppComponent() {
+        this.phone = __WEBPACK_IMPORTED_MODULE_1_app_globals__["a" /* PHONE */];
     }
     AppComponent.prototype.ngOnInit = function () {
         lightbox.option({
@@ -102,23 +105,24 @@ var AppComponent = (function () {
         });
     };
     AppComponent.prototype.ngAfterViewInit = function () {
-        $('.masthead.segment').visibility({
-            once: false,
-            onBottomPassed: function () {
-                $('.fixed.menu').transition('fade in');
-            },
-            onBottomPassedReverse: function () {
-                $('.fixed.menu').transition('fade out');
-            },
-        });
+        $('.masthead.segment').parallax({ imageSrc: '/assets/images/masthead.png' });
+        // $('.masthead.segment').visibility({
+        //   once: false,
+        //   onBottomPassed: () => {
+        //     $('.fixed.menu').transition('fade in');
+        //   },
+        //   onBottomPassedReverse: () => {
+        //     $('.fixed.menu').transition('fade out');
+        //   },
+        // });
     };
     return AppComponent;
 }());
 AppComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'felk-root',
-        template: __webpack_require__(197),
-        styles: [__webpack_require__(190)]
+        template: __webpack_require__(204),
+        styles: [__webpack_require__(194)]
     })
 ], AppComponent);
 
@@ -126,18 +130,19 @@ AppComponent = __decorate([
 
 /***/ }),
 
-/***/ 133:
+/***/ 136:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(127);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng_semantic_ng_semantic__ = __webpack_require__(130);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_routing_module__ = __webpack_require__(131);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(132);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__home_home_component__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(130);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng_semantic_ng_semantic__ = __webpack_require__(133);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_routing_module__ = __webpack_require__(134);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(135);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__home_home_component__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__footer_footer_component__ = __webpack_require__(137);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -145,6 +150,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -163,6 +169,7 @@ AppModule = __decorate([
         declarations: [
             __WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */],
             __WEBPACK_IMPORTED_MODULE_7__home_home_component__["a" /* HomeComponent */],
+            __WEBPACK_IMPORTED_MODULE_8__footer_footer_component__["a" /* FooterComponent */],
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -180,7 +187,37 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ 134:
+/***/ 137:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FooterComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var FooterComponent = (function () {
+    function FooterComponent() {
+    }
+    return FooterComponent;
+}());
+FooterComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+        selector: 'felk-footer',
+        template: __webpack_require__(205),
+        styles: [__webpack_require__(195)]
+    })
+], FooterComponent);
+
+//# sourceMappingURL=footer.component.js.map
+
+/***/ }),
+
+/***/ 138:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -192,7 +229,7 @@ var environment = {
 
 /***/ }),
 
-/***/ 190:
+/***/ 194:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(15)();
@@ -200,7 +237,7 @@ exports = module.exports = __webpack_require__(15)();
 
 
 // module
-exports.push([module.i, ".footer {\n  padding: 5em 0em; }\n\n.color-overlay {\n  position: absolute;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  background-color: rgba(32, 26, 22, 0.7); }\n  .color-overlay ~ * {\n    position: relative; }\n", ""]);
+exports.push([module.i, ".footer {\n  padding: 5em 0em; }\n", ""]);
 
 // exports
 
@@ -210,7 +247,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 191:
+/***/ 195:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(15)();
@@ -218,7 +255,7 @@ exports = module.exports = __webpack_require__(15)();
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".footer.segment {\n  padding: 5em 0em; }\n", ""]);
 
 // exports
 
@@ -228,24 +265,49 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 197:
-/***/ (function(module, exports) {
-
-module.exports = "<!-- Fixed menu -->\n<div smDeviceVisibility=\"tablet computer\">\n  <sm-menu id='fixed-menu' class='top large hidden fixed'>\n    <div class='ui container'>\n      <!--<a sm-item href=\"/\" class='active'>Home</a>\n      <a sm-item href=\"/other\">Other</a>-->\n      <div class='item'>Felker's Tents, Tables & Chairs</div>\n      <!--<div class='item right'>\n        <a class='ui button' href='tel:555-555-5555'>Call (555) 555-5555 for a quote!</a>\n      </div>-->\n    </div>\n  </sm-menu>\n</div>\n\n<sm-segment class=\"inverted vertical masthead center aligned\">\n  <div class='color-overlay'></div>\n  <div class='ui container'>\n    <!-- Desktop Header -->\n    <div smDeviceVisibility=\"tablet computer\">\n      <sm-menu class='inverted large pointing secondary'>\n        <!--<a sm-item href=\"/\" class='active'>Home</a>\n        <a sm-item href=\"/other\">Other</a>-->\n        <!--<div class='item right'>\n          <a class='ui inverted button' href='tel:555-555-5555'>Call (555) 555-5555 for a quote!</a>\n        </div>-->\n      </sm-menu>\n    </div>\n\n    <!-- Mobile Header -->\n    <sm-menu class=\"inverted secondary\" smDeviceVisibility=\"mobile only\">\n        <!--<a sm-item icon='sidebar big' (click)=\"mobileSidebar.show({transition: 'overlay'})\"></a>\n        <sm-sidebar class=\"left vertical inverted sidebar labeled menu icon\" #mobileSidebar>\n            <a class=\"item\">\n                <i class=\"home icon\"></i> Home\n            </a>\n            <a class=\"item\">\n                <i class=\"block layout icon\"></i> Other\n            </a>\n        </sm-sidebar>-->\n    </sm-menu>\n  </div>\n  <div class=\"ui text container\">\n    <h2>\n      Felker's\n      Tents, Tables & Chairs\n    </h2>\n    <h1 class='ui inverted header'>The Tops in Tents</h1>\n    <a class='ui large inverted button' href='tel:555-555-5555'>Call (555) 555-5555 for a quote!</a>\n    <!--<div class=\"ui huge primary button\">Get Started <i class=\"right arrow icon\"></i></div>-->\n  </div>\n</sm-segment>\n\n<router-outlet></router-outlet>\n<!-- Footer -->\n<div class=\"ui inverted vertical footer segment\">\n  <div class=\"ui container\">\n    <div class=\"ui stackable inverted divided equal height stackable grid\">\n      <div class=\"three wide column\">\n        <h4 class=\"ui inverted header\">About</h4>\n        <div class=\"ui inverted link list\">\n          <a href=\"#\" class=\"item\">Sitemap</a>\n          <a href=\"#\" class=\"item\">Contact Us</a>\n          <a href=\"#\" class=\"item\">Religious Ceremonies</a>\n          <a href=\"#\" class=\"item\">Gazebo Plans</a>\n        </div>\n      </div>\n      <div class=\"three wide column\">\n        <h4 class=\"ui inverted header\">Services</h4>\n        <div class=\"ui inverted link list\">\n          <a href=\"#\" class=\"item\">Banana Pre-Order</a>\n          <a href=\"#\" class=\"item\">DNA FAQ</a>\n          <a href=\"#\" class=\"item\">How To Access</a>\n          <a href=\"#\" class=\"item\">Favorite X-Men</a>\n        </div>\n      </div>\n      <div class=\"seven wide column\">\n        <h4 class=\"ui inverted header\">Footer Header</h4>\n        <p>Extra space for a call to action inside the footer that could help re-engage users.</p>\n      </div>\n    </div>\n  </div>\n</div>\n"
-
-/***/ }),
-
-/***/ 198:
-/***/ (function(module, exports) {
-
-module.exports = "<sm-segment class=\"vertical stripe\">\n  <div class=\"ui stackable grid container\">\n    <div class=\"row\">\n      <div class=\"eight wide column\">\n        <h3 class=\"ui header\">Servicing the Owosso Area and Beyond</h3>\n        <p>\n          In entirely be to at settling felicity. Fruit two match men you seven share. Needed as or is enough points. Miles at smart ﻿no marry whole linen mr. Income joy nor can wisdom summer. Extremely depending he gentleman improving intention rapturous as.\n        </p>\n      </div>\n      <div class=\"eight wide column\">\n        <h3 class=\"ui header\">We Make Bananas That Can Dance</h3>\n        <p>Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.</p>\n      </div>\n    </div>\n    <div class='row'>\n      <div class='ui grid container'>\n        <div class='eight wide column' *ngFor='let image of images'>\n          <a [href]='\"assets/images/\" + image' data-lightbox='slideshow'>\n            <img [src]='\"assets/images/\" + image' class=\"ui bordered rounded image\">\n          </a>\n        </div>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"center aligned column\">\n        <a class='ui huge button' href='tel:555-555-5555'>Call (555) 555-5555 for a quote!</a>\n      </div>\n    </div>\n  </div>\n</sm-segment>\n\n<!--<sm-segment class='container vertical stripe'>\n<p>\n  Allow miles wound place the leave had. To sitting subject no improve studied limited. Ye indulgence unreserved connection alteration appearance my an astonished. Up as seen sent make he they of. Her raising and himself pasture believe females. Fancy she stuff after aware merit small his. Charmed esteems luckily age out.\n</p>\n<p>\n  As absolute is by amounted repeated entirely ye returned. These ready timed enjoy might sir yet one since. Years drift never if could forty being no. On estimable dependent as suffering on my. Rank it long have sure in room what as he. Possession travelling sufficient yet our. Talked vanity looked in to. Gay perceive led believed endeavor. Rapturous no of estimable oh therefore direction up. Sons the ever not fine like eyes all sure.\n</p>\n</sm-segment>-->\n"
-
-/***/ }),
-
-/***/ 241:
+/***/ 196:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(118);
+exports = module.exports = __webpack_require__(15)();
+// imports
+
+
+// module
+exports.push([module.i, "#info, #info2 {\n  min-height: 300px; }\n  #info /deep/ .ui.vertical.stripe p, #info2 /deep/ .ui.vertical.stripe p {\n    font-size: 2em; }\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 204:
+/***/ (function(module, exports) {
+
+module.exports = "<!-- Fixed menu -->\n<div smDeviceVisibility=\"tablet computer\">\n  <sm-menu id='fixed-menu' class='top large hidden fixed'>\n    <div class='ui container'>\n      <!--<a sm-item href=\"/\" class='active'>Home</a>\n      <a sm-item href=\"/other\">Other</a>-->\n      <div class='item'>Felker's Tents, Tables & Chairs</div>\n      <!--<div class='item right'>\n        <a class='ui button' href='tel:555-555-5555'>Call (555) 555-5555 for a quote!</a>\n      </div>-->\n    </div>\n  </sm-menu>\n</div>\n\n<sm-segment class=\"inverted vertical masthead center aligned\">\n  <div class='ui container'>\n    <!-- Desktop Header -->\n    <div smDeviceVisibility=\"tablet computer\">\n      <sm-menu class='inverted large pointing secondary'>\n        <!--<a sm-item href=\"/\" class='active'>Home</a>\n        <a sm-item href=\"/other\">Other</a>-->\n        <!--<div class='item right'>\n          <a class='ui inverted button' href='tel:555-555-5555'>Call (555) 555-5555 for a quote!</a>\n        </div>-->\n      </sm-menu>\n    </div>\n\n    <!-- Mobile Header -->\n    <sm-menu class=\"inverted secondary\" smDeviceVisibility=\"mobile only\">\n        <!--<a sm-item icon='sidebar big' (click)=\"mobileSidebar.show({transition: 'overlay'})\"></a>\n        <sm-sidebar class=\"left vertical inverted sidebar labeled menu icon\" #mobileSidebar>\n            <a class=\"item\">\n                <i class=\"home icon\"></i> Home\n            </a>\n            <a class=\"item\">\n                <i class=\"block layout icon\"></i> Other\n            </a>\n        </sm-sidebar>-->\n    </sm-menu>\n  </div>\n  <div class=\"ui text container\">\n    <h2>\n      Felker's\n      Tents, Tables & Chairs\n    </h2>\n    <h1 class='ui inverted header'>The Tops in Tents</h1>\n    <a class='ui large inverted button' href='tel:{{ phone }}'>Call {{ phone }} for a quote!</a>\n    <!--<div class=\"ui huge primary button\">Get Started <i class=\"right arrow icon\"></i></div>-->\n  </div>\n</sm-segment>\n\n<router-outlet></router-outlet>\n\n<!-- Footer -->\n<felk-footer></felk-footer>\n"
+
+/***/ }),
+
+/***/ 205:
+/***/ (function(module, exports) {
+
+module.exports = "<div class='ui inverted vertical footer segment'>\n  <div class='ui container'>\n    <div class='ui center aligned stackable grid'>\n      <div class='column'>\n        <h4 class='ui inverted header'>&copy; 2017 Felker's Tents, Tables & Chairs</h4>\n        <!--<p>Extra space for a call to action inside the footer that could help re-engage users.</p>-->\n      </div>\n    </div>\n    <!--<div class=\"ui stackable inverted divided equal height stackable grid\">\n      <div class=\"three wide column\">\n        <h4 class=\"ui inverted header\">About</h4>\n        <div class=\"ui inverted link list\">\n          <a href=\"#\" class=\"item\">Sitemap</a>\n          <a href=\"#\" class=\"item\">Contact Us</a>\n          <a href=\"#\" class=\"item\">Religious Ceremonies</a>\n          <a href=\"#\" class=\"item\">Gazebo Plans</a>\n        </div>\n      </div>\n      <div class=\"three wide column\">\n        <h4 class=\"ui inverted header\">Services</h4>\n        <div class=\"ui inverted link list\">\n          <a href=\"#\" class=\"item\">Banana Pre-Order</a>\n          <a href=\"#\" class=\"item\">DNA FAQ</a>\n          <a href=\"#\" class=\"item\">How To Access</a>\n          <a href=\"#\" class=\"item\">Favorite X-Men</a>\n        </div>\n      </div>\n      <div class=\"seven wide column\">\n        <h4 class=\"ui inverted header\">Footer Header</h4>\n        <p>Extra space for a call to action inside the footer that could help re-engage users.</p>\n      </div>\n    </div>-->\n  </div>\n</div>\n"
+
+/***/ }),
+
+/***/ 206:
+/***/ (function(module, exports) {
+
+module.exports = "<!-- Servicing Owosso -->\n<sm-segment class='vertical stripe'>\n  <div class='ui stackable grid container'>\n    <div class='row'>\n      <div class='center aligned column'>\n        <h3 class='ui header'>Servicing the Owosso Area and Beyond</h3>\n        <p>\n        </p>\n      </div>\n    </div>\n  </div>\n</sm-segment>\n\n<!-- Photo Grid -->\n<sm-segment class='vertical stripe no-top'>\n  <div class='ui stackable grid container'>\n    <div class='row'>\n      <div class='ui grid container'>\n        <div class='eight wide column' *ngFor='let image of images'>\n          <a [href]='\"assets/images/\" + image' data-lightbox='slideshow'>\n            <img [src]='\"assets/images/\" + image' class='ui bordered rounded image'>\n          </a>\n        </div>\n      </div>\n    </div>\n  </div>\n</sm-segment>\n\n<!-- Create picturesque environments -->\n<div id='info' class='ui middle aligned center aligned grid'>\n  <div class='row'>\n    <div class='column'>\n      <sm-segment class='vertical stripe inverted transparent-bg'>\n        <div class='ui container'>\n          <i class='camera retro icon'></i> Create picturesque environments.\n        </div>\n      </sm-segment>\n    </div>\n  </div>\n</div>\n\n<!-- Photo Grid -->\n<sm-segment class='vertical stripe'>\n  <div class='ui stackable grid container'>\n    <div class='row'>\n      <div class='ui grid container'>\n        <div class='eight wide column' *ngFor='let image of images2'>\n          <a [href]='\"assets/images/\" + image' data-lightbox='slideshow'>\n            <img [src]='\"assets/images/\" + image' class='ui bordered rounded image'>\n          </a>\n        </div>\n      </div>\n    </div>\n  </div>\n</sm-segment>\n\n<!-- We come to you -->\n<div id='info2' class='ui middle aligned center aligned grid'>\n  <div class='row'>\n    <div class='column'>\n      <sm-segment class='vertical stripe inverted transparent-bg'>\n        <div class='ui container'>\n          <i class='shipping icon'></i> We come to you.\n        </div>\n      </sm-segment>\n    </div>\n  </div>\n</div>\n\n<!-- Stock -->\n<sm-segment class='vertical stripe'>\n  <div class='ui stackable grid container'>\n    <div class='row'>\n      <div class='eight wide column'>\n        <h3 class='ui header'>Canopy Tents</h3>\n        <sm-list class='big relaxed animated celled'>\n          <sm-item>20x20 Yellow, Red, or Green Striped with White</sm-item>\n          <sm-item>20x30 Yellow Striped with White</sm-item>\n          <sm-item>20x40 White</sm-item>\n          <sm-item>40x40 White</sm-item>\n          <sm-item>40x60 White</sm-item>\n        </sm-list>\n      </div>\n      <div class='eight wide column'>\n        <h3 class='ui header'>Frame Tents</h3>\n        <sm-list class='big relaxed animated celled'>\n          <sm-item>20x20 White</sm-item>\n          <sm-item>20x30 White</sm-item>\n        </sm-list>\n      </div>\n    </div>\n    <div class='row'>\n      <div class='eight wide column'>\n        <h3 class='ui header'>Tables</h3>\n        <sm-list class='big relaxed animated celled'>\n          <sm-item>6ft - Beige</sm-item>\n          <sm-item>8ft - White</sm-item>\n          <sm-item>8ft - Brown</sm-item>\n          <sm-item>6ft - White Ice</sm-item>\n          <sm-item>5ft - White Round</sm-item>\n          <sm-item>(SIZE NEEDED) - Hightop/Cocktail</sm-item>\n        </sm-list>\n      </div>\n      <div class='eight wide column'>\n        <h3 class='ui header'>Chairs</h3>\n        <sm-list class='big relaxed animated celled'>\n          <sm-item>White Back and Seat/White Frame</sm-item>\n          <sm-item>Off-White Back and Seat/Brown Frame</sm-item>\n        </sm-list>\n      </div>\n    </div>\n    <div class='row'>\n      <div class='center aligned column'>\n        <a class='ui huge button' href='tel:{{ phone }}'>Call {{ phone }} for a quote!</a>\n      </div>\n    </div>\n  </div>\n</sm-segment>\n"
+
+/***/ }),
+
+/***/ 249:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(119);
 
 
 /***/ }),
@@ -254,7 +316,18 @@ module.exports = __webpack_require__(118);
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PHONE; });
+var PHONE = '989-723-9388';
+//# sourceMappingURL=globals.js.map
+
+/***/ }),
+
+/***/ 88:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_app_globals__ = __webpack_require__(87);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -266,24 +339,30 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var HomeComponent = (function () {
     function HomeComponent() {
         this.images = [
             'yellow_20x20.png',
             'yellow_20x20.2.png',
+        ];
+        this.images2 = [
             'cover5.png',
             'cover8.jpg',
         ];
+        this.phone = __WEBPACK_IMPORTED_MODULE_1_app_globals__["a" /* PHONE */];
     }
-    HomeComponent.prototype.ngOnInit = function () {
+    HomeComponent.prototype.ngOnInit = function () { };
+    HomeComponent.prototype.ngAfterViewInit = function () {
+        $('#info, #info2').parallax({ imageSrc: '/assets/images/info.png' });
     };
     return HomeComponent;
 }());
 HomeComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'felk-home',
-        template: __webpack_require__(198),
-        styles: [__webpack_require__(191)]
+        template: __webpack_require__(206),
+        styles: [__webpack_require__(196)]
     }),
     __metadata("design:paramtypes", [])
 ], HomeComponent);
@@ -292,5 +371,5 @@ HomeComponent = __decorate([
 
 /***/ })
 
-},[241]);
+},[249]);
 //# sourceMappingURL=main.bundle.js.map
