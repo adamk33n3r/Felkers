@@ -26,7 +26,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
   public ngOnInit() {}
 
   public ngAfterViewInit() {
-    $('#info, #info2').parallax({ imageSrc: '/assets/images/info.png' });
+    $('#info').parallax({ imageSrc: '/assets/images/info.png' });
+    $('#info2').parallax({ imageSrc: '/assets/images/trailer.png' });
   }
 
   public sendEvent() {
