@@ -1,0 +1,70 @@
+{
+  "routing": {
+    "index": "/index.html",
+    "routes": {
+      "/": {
+        "prefix": false
+      }
+    }
+  },
+  "static": {
+    "urls": {
+      "/flags.9c74e172f87984c48ddf.png": "4a552ecb123ded5040ddda01d626103cc65db055",
+      "/icons.912ec66d7572ff821749.svg": "98a8aa5cf7d62c2eff5f07ede8d844b874ef06ed",
+      "/icons.fee66e712a8a08eef580.woff": "28b782240b3e76db824e12c02754a9731a167527",
+      "/icons.b06871f281fee6b241d6.ttf": "13b1eab65a983c7a73bc7997c479d66943f7c6cb",
+      "/icons.af7ae505a9eed503f8b8.woff2": "d6f48cba7d076fb6f2fd6ba993a75b9dc1ecbf0c",
+      "/icons.674f50d287a8c48dc19b.eot": "d980c2ce873dc43af460d4d572d441304499f400",
+      "/polyfills.72d20f12af9489a85880.bundle.js": "062cd3da569e0a458bd9cc5facda0b3476f67a6a",
+      "/main.20ca69876a8d0e9180ee.bundle.js": "63528d02918f1c7af9bf2cec0661d83cd5ba1711",
+      "/scripts.e65eb7a596e2243b31bc.bundle.js": "46d3b2dfbe03a811b714ef1cb85b6c5084a12598",
+      "/sw-register.0ca159d95c1789a30ea4.bundle.js": "ad3c07c60b87531536df5b835e97f2a7d3bcf6d1",
+      "/vendor.758db3b67910b28ee726.bundle.js": "896672f5f951994c535eaf987a359a021b5a62a4",
+      "/inline.7eb5af0763702ef31536.bundle.js": "5fad8714cb72709b06b59c3f1e01af6dd66f38d9",
+      "/styles.6c2a87fff165b17556e4.bundle.css": "c221debce92188cd74315b5096a08b20ff8cc705",
+      "/assets/images/cover.jpg": "4360dd128a830b6cd0c67875a4c760b3466342ef",
+      "/assets/images/cover2.jpg": "ba0bed42ccf17f0c44164a522556f831d62e3067",
+      "/assets/images/cover3.png": "fc69994aa1d05faa0299c8c2c47bd751535f50a7",
+      "/assets/images/cover4.png": "bf736b8ba70dabbd1aeee2ae3f04d6ceab05d931",
+      "/assets/images/cover5.png": "6c2291428be7cf6ebb26c5b030d08b026385834c",
+      "/assets/images/cover6.png": "4cf0b2297911ec9432131a87f672173953420a8c",
+      "/assets/images/cover7.png": "3fe798919a4fab377ad42525d1b156392bc44d81",
+      "/assets/images/cover8.jpg": "be72ecb5c877baff8ee40162796ffa2993501cb2",
+      "/assets/images/info.png": "14c7523edf73b2ac87c4dbd8a61636abfeff2db5",
+      "/assets/images/masthead.pdn": "bc58c5ba6159ad2d292c5af5401324e5e9b4b765",
+      "/assets/images/logo.png": "1e0c2648509ed69b5ab0a8772b22ce887288f2db",
+      "/assets/images/trailer.pdn": "18c2d03cbbef0b514ac51e12fb1880da432e8375",
+      "/assets/images/masthead.png": "2a6ca55acc7199d96eb05fcb5d3c7e10198e2502",
+      "/assets/images/trailer.png": "e58f7b34dd97bee5f9bc5b5ece07dcbdf6e52a62",
+      "/assets/images/yellow_20x20.2.png": "d54be06b5f5879807a5dcc98478c99fef92c2d40",
+      "/assets/images/yellow_20x20.png": "035b68d96951d52bd16fb664d3547d5b5d16a1af",
+      "/assets/semantic/.versions": "34f20b4e41155af94c89de09cdffa152fbde0024",
+      "/assets/semantic/LICENSE": "e744045bfa52cb152f8a3236fe2dabb931717d31",
+      "/assets/semantic/README.md": "2270fc073fef72cb1361b3816ea64af12b600821",
+      "/assets/semantic/semantic.css": "d115336b754dada1fdc6de042b1c8c0d62c59ba1",
+      "/assets/semantic/semantic.js": "632c37c1a9230a17d34494c1a7552f84e3d5c379",
+      "/assets/semantic/semantic.min.css": "c4dee0152a76420c383314239b278d8dff8ed7fd",
+      "/assets/semantic/semantic.min.js": "e6fe802783c6005b434a043f1bf6d954cf2b9ca4",
+      "/assets/semantic/themes/default/assets/fonts/icons.eot": "d980c2ce873dc43af460d4d572d441304499f400",
+      "/assets/semantic/themes/default/assets/fonts/icons.otf": "cde9eb92c8a3ba23d648f76ea3931511f30813f4",
+      "/assets/semantic/themes/default/assets/fonts/icons.svg": "98a8aa5cf7d62c2eff5f07ede8d844b874ef06ed",
+      "/assets/semantic/themes/default/assets/fonts/icons.ttf": "13b1eab65a983c7a73bc7997c479d66943f7c6cb",
+      "/assets/semantic/themes/default/assets/fonts/icons.woff": "28b782240b3e76db824e12c02754a9731a167527",
+      "/assets/semantic/themes/default/assets/fonts/icons.woff2": "d6f48cba7d076fb6f2fd6ba993a75b9dc1ecbf0c",
+      "/assets/semantic/themes/default/assets/images/flags.png": "4a552ecb123ded5040ddda01d626103cc65db055",
+      "/android-chrome-192x192.png": "161c22f83b612ff5ee13882220ea078d30f9bd87",
+      "/android-chrome-256x256.png": "14d6142731537746adbd1ba618b175a9ff7ba9ec",
+      "/browserconfig.xml": "05845fb3460d38cbd421c57f16776a87eae5a68a",
+      "/apple-touch-icon.png": "86f2c92fc6ca50a914b74d55e0766293d0164fd2",
+      "/favicon-16x16.png": "e343b99bc7532aaed991b4e472a7683de9ae6831",
+      "/favicon-32x32.png": "8668b6e947ee386b3fda56325308f63a6a5bab56",
+      "/favicon.ico": "aa08288910ef2e34e5768fb953bb4914c2148761",
+      "/manifest.json": "6b5046d034188229e6698dc72ce2287fb421b916",
+      "/mstile-150x150.png": "1f3ae0213c49be77df989b4f671ca0e1908b7294",
+      "/safari-pinned-tab.svg": "f234d1ff233cd6ddcac47a8d68eedb0f56eb3dab",
+      "/sitemap.txt": "33f8ce8b8122090eb1c70f7555d8ebfa1567b856",
+      "/index.html": "b88449f90554c111775faa40fd4443b07287cf41"
+    },
+    "_generatedFromWebpack": true
+  }
+}
